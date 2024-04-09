@@ -2,7 +2,7 @@
 the custom code for [UVR5](https://github.com/Anjok07/ultimatevocalremovergui) to separate vocals and background music
 <div>
   <figure>
-  <img alt='donate' src="web.jpg?raw=true" width="600px"/>
+  <img alt='webpage' src="web.png?raw=true" width="600px"/>
   <figure>
 </div>
 ## How to use
