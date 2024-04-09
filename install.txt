@@ -1,0 +1,8 @@
+1. ffmpeg
+## linux
+apt update
+apt install ffmpeg -y
+
+## windows
+use wingetui
+install ffmpeg
