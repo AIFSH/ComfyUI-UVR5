@@ -1,5 +1,5 @@
 # ComfyUI-UVR5
-the custom code for [UVR5](https://github.com/Anjok07/ultimatevocalremovergui) to separate vocals and background music
+the comfyui custom node for [UVR5](https://github.com/Anjok07/ultimatevocalremovergui) to separate vocals and background music
 <div>
   <figure>
   <img alt='webpage' src="web.png?raw=true" width="600px"/>
@@ -31,4 +31,8 @@ pip install -r requirements.txt
   <img alt='donate' src="donate.jpg?raw=true" width="300px"/>
   <figure>
 </div>
+
+## Thanks
+- [GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS.git)
+- [ultimatevocalremovergui](https://github.com/Anjok07/ultimatevocalremovergui) also konwn as UVR5
 
