@@ -17,7 +17,8 @@ weights_path = os.path.join(node_path, "uvr5")
 device= "cuda" if cuda_malloc_supported() else "cpu"
 is_half=True
 
-class PlayAudio:
+
+class PreViewAudio:
     @classmethod
     def INPUT_TYPES(s):
         return {"required":
@@ -53,7 +54,7 @@ class LoadAudio:
     @classmethod
     def INPUT_TYPES(s):
         input_dir = input_path
-        files = [f for f in os.listdir(input_dir) if os.path.isfile(os.path.join(input_dir, f)) and f.split('.')[-1] in ["wav", "mp3"]]
+        files = [f for f in os.listdir(input_dir) if os.path.isfile(os.path.join(input_dir, f)) and f.split('.')[-1] in ["wav", "mp3","WAV","flac","m4a"]]
         return {"required":
                     {"audio": (sorted(files),)},
                 }
@@ -142,7 +143,7 @@ class UVR5:
                     "display": "slider"
                 }),
                 "format0":(["wav", "flac", "mp3", "m4a"],{
-                    "default": "flac"
+                    "default": "wav"
                 })
             },
         }
