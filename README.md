@@ -21,6 +21,8 @@ git clone https://github.com/AIFSH/ComfyUI-UVR5.git
 cd ComfyUI-UVR5
 pip install -r requirements.txt
 ```
+`weights` will be download from huggingface automatically!
+
 ## Tutorial
 [demo](https://www.bilibili.com/video/BV1Tr421x75F/?share_source=copy_web&vd_source=453c36b4abef37acd389d4c01b149023)
 
