@@ -24,8 +24,8 @@ pip install -r requirements.txt
 `weights` will be download from huggingface automatically!
 
 ## Tutorial
-[demo](https://www.bilibili.com/video/BV1Tr421x75F/?share_source=copy_web&vd_source=453c36b4abef37acd389d4c01b149023)
-
+- [demo](https://www.bilibili.com/video/BV1Tr421x75F/?share_source=copy_web&vd_source=453c36b4abef37acd389d4c01b149023)
+- [FULL WorkFLOW](https://www.bilibili.com/video/BV1XE421T7ja)
 ## WeChat Group && Donate
 <div>
   <figure>
