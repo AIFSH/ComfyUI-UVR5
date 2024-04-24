@@ -158,20 +158,23 @@ class UVR5:
     CATEGORY = "AIFSH_UVR5"
 
     def split(self, audio, model,agg,format0):
+        
         if model == "onnx_dereverb_By_FoxJoy":
-            hf_hub_download(
-                repo_id="lj1995/VoiceConversionWebUI",
-                filename="vocals.onnx",
-                subfolder= "uvr5_weights/onnx_dereverb_By_FoxJoy",
-                local_dir= weights_path
-            )
+            if not os.path.isfile(os.path.join(weights_path,"uvr5_weights/onnx_dereverb_By_FoxJoy", "vocals.onnx")):
+                hf_hub_download(
+                    repo_id="lj1995/VoiceConversionWebUI",
+                    filename="vocals.onnx",
+                    subfolder= "uvr5_weights/onnx_dereverb_By_FoxJoy",
+                    local_dir= weights_path
+                )
         else:
-            hf_hub_download(
-                repo_id="lj1995/VoiceConversionWebUI",
-                filename=model,
-                subfolder= "uvr5_weights",
-                local_dir= weights_path
-            )
+            if not os.path.isfile(os.path.join(weights_path,"uvr5_weights", model)):
+                hf_hub_download(
+                    repo_id="lj1995/VoiceConversionWebUI",
+                    filename=model,
+                    subfolder= "uvr5_weights",
+                    local_dir= weights_path
+                )
         save_root_vocal = output_path
         save_root_ins = output_path
         vocal_AUDIO,bgm_AUDIO = self.uvr(model, audio, save_root_vocal,save_root_ins,agg, format0)
