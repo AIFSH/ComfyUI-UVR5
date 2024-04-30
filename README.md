@@ -23,6 +23,15 @@ pip install -r requirements.txt
 ```
 `weights` will be download from huggingface automatically!
 
+## Windows
+There is a portable standalone build for Windows that should work for running on Nvidia GPUs and cuda>=11.8,
+click [the link](https://www.bilibili.com/video/BV1qx4y1h7T2) to download
+<div>
+  <figure>
+  <img alt='Wechat' src="1key.jpg?raw=true" width="300px"/>
+  <figure>
+</div>
+
 ## Tutorial
 - [demo](https://www.bilibili.com/video/BV1Tr421x75F/?share_source=copy_web&vd_source=453c36b4abef37acd389d4c01b149023)
 - [FULL WorkFLOW](https://www.bilibili.com/video/BV1XE421T7ja)
