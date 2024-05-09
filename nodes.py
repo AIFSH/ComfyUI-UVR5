@@ -54,7 +54,7 @@ class LoadAudio:
     @classmethod
     def INPUT_TYPES(s):
         input_dir = input_path
-        files = [f for f in os.listdir(input_dir) if os.path.isfile(os.path.join(input_dir, f)) and f.split('.')[-1] in ["wav", "mp3","WAV","flac","m4a"]]
+        files = [f for f in os.listdir(input_dir) if os.path.isfile(os.path.join(input_dir, f)) and f.split('.')[-1].lower() in ["wav", "mp3","flac","m4a"]]
         return {"required":
                     {"audio": (sorted(files),)},
                 }
