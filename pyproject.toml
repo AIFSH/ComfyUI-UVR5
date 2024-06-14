@@ -1,0 +1,15 @@
+[project]
+name = "comfyui-uvr5"
+description = "the custom code for [a/UVR5](https://github.com/Anjok07/ultimatevocalremovergui) to separate vocals and background music"
+version = "1.0.0"
+license = "LICENSE"
+dependencies = ["ffmpeg-python", "librosa", "onnxruntime-gpu"]
+
+[project.urls]
+Repository = "https://github.com/AIFSH/ComfyUI-UVR5"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "ComfyUI-UVR5"
+Icon = ""
