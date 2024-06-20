@@ -148,7 +148,7 @@ class UVR5:
             },
         }
 
-    RETURN_TYPES = ("AUDIO","AUDIO")
+    RETURN_TYPES = ("AUDIOPATH","AUDIOPATH")
     RETURN_NAMES = ("vocal_AUDIO","bgm_AUDIO")
 
     FUNCTION = "split"
