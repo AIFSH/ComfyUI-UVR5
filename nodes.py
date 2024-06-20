@@ -22,7 +22,7 @@ class PreViewAudio:
     @classmethod
     def INPUT_TYPES(s):
         return {"required":
-                    {"audio": ("AUDIO",),}
+                    {"audio": ("AUDIOPATH",),}
                 }
 
     CATEGORY = "AIFSH_UVR5"
@@ -50,7 +50,7 @@ class PreViewAudio:
         return m.digest().hex()
 
 
-class LoadAudio:
+class LoadAudioPath:
     @classmethod
     def INPUT_TYPES(s):
         input_dir = input_path
@@ -61,7 +61,7 @@ class LoadAudio:
 
     CATEGORY = "AIFSH_UVR5"
 
-    RETURN_TYPES = ("AUDIO",)
+    RETURN_TYPES = ("AUDIOPATH",)
     FUNCTION = "load_audio"
 
     def load_audio(self, audio):
@@ -131,7 +131,7 @@ class UVR5:
                       "VR-DeEchoAggressive.pth","VR-DeEchoDeReverb.pth","VR-DeEchoNormal.pth","onnx_dereverb_By_FoxJoy"]
         return {
             "required": {
-                "audio": ("AUDIO",),
+                "audio": ("AUDIOPATH",),
                 "model": (model_list,{
                     "default": "HP5-主旋律人声vocals+其他instrumentals.pth"
                 }),
